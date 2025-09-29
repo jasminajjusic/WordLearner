@@ -12,5 +12,13 @@ The app makes learning new words engaging and effective.
 ## 🛠️ Technologies & Libraries
 - [React Native](https://reactnative.dev/)  
 - [Expo](https://expo.dev/) – for fast development and testing  
-- [Zustand](https://github.com/pmndrs/zustand) – for simple and efficient state management  
+- [Zustand](https://github.com/pmndrs/zustand) – for simple and efficient state management
+
+## 📸 Screenshots
+
+Here is an example of the app:
+
+![App Screenshot](assets/images/wordlearner.png)
+
+
 
