@@ -17,7 +17,7 @@ export default function StartScreen() {
       title: "Flashcards",
       color: "#f87171",
       icon: <FontAwesome5 name="book" size={32} color="white" />,
-      onPress: () => router.push("/flashcards"), // sad vodi na screen
+      onPress: () => router.push("/flashcards"),
     },
 
     {
@@ -80,12 +80,13 @@ const styles = StyleSheet.create({
     marginBottom: 30,
   },
   grid: {
-    flexDirection: "row",
-    flexWrap: "wrap",
-    justifyContent: "space-between",
+    flexDirection: "column",
+
+    gap: 16,
   },
   box: {
-    width: "48%",
+    width: "90%",
+    alignSelf: "center",
     height: 140,
     borderRadius: 14,
     justifyContent: "center",
