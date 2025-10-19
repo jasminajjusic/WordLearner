@@ -3,9 +3,8 @@ import React, { useEffect, useState } from "react";
 import { ActivityIndicator, View } from "react-native";
 import { useTranslateStore } from "../stores/translateStore";
 
-import GameOverCard from "../../components/game_over_card";
-
-import TranslateCard from "../../components/translate_card";
+import GameOverCard from "../../components/translate/game_over_card";
+import TranslateCard from "../../components/translate/translate_card";
 
 export default function TranslateScreen() {
   const router = useRouter();
