@@ -1,6 +1,7 @@
 import { useRouter } from "expo-router";
 import React, { useEffect, useState } from "react";
 import {
+  ActivityIndicator,
   StyleSheet,
   Text,
   TextInput,
@@ -18,20 +19,41 @@ function shuffleString(str: string) {
 
 export default function WordScrambleScreen() {
   const router = useRouter();
-  const { words, currentIndex, score, nextWord, markCorrect, resetGame } =
-    useWordScrambleStore();
+  const {
+    words,
+    currentIndex,
+    score,
+    nextWord,
+    markCorrect,
+    resetGame,
+    fetchWords,
+    loading,
+  } = useWordScrambleStore();
 
   const [input, setInput] = useState("");
   const [scrambled, setScrambled] = useState("");
   const [showAnswer, setShowAnswer] = useState(false);
 
   useEffect(() => {
-    if (currentIndex < words.length) {
+    fetchWords("Bosnian", 8);
+  }, []);
+
+  useEffect(() => {
+    if (!loading && currentIndex < words.length) {
       setScrambled(shuffleString(words[currentIndex].word));
       setInput("");
       setShowAnswer(false);
     }
-  }, [currentIndex]);
+  }, [currentIndex, loading, words]);
+
+  if (loading) {
+    return (
+      <View style={styles.container}>
+        <ActivityIndicator size="large" color="#34d399" />
+        <Text style={styles.title}>Loading words...</Text>
+      </View>
+    );
+  }
 
   if (currentIndex >= words.length) {
     return (

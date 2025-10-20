@@ -25,7 +25,7 @@ export const useTranslateStore = create<TranslateState>((set) => ({
   fetchWords: async (language = "Bosnian", count = 5) => {
     set({ loading: true });
     try {
-      const res = await fetch("http://192.168.1.10:3000/generate-words", {
+      const res = await fetch("http://192.168.1.3:3000/generate-words", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ language, count }),
