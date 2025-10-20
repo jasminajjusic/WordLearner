@@ -1,0 +1,61 @@
+import { StyleSheet } from "react-native";
+
+export const styles = StyleSheet.create({
+  loaderContainer: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundColor: "#f3f4f6",
+  },
+  container: {
+    flex: 1,
+    paddingHorizontal: 24,
+    paddingVertical: 40,
+    backgroundColor: "#f3f4f6",
+  },
+  progress: {
+    textAlign: "center",
+    fontSize: 16,
+    color: "#6b7280",
+    marginBottom: 28,
+  },
+  wordBox: {
+    backgroundColor: "#2563eb",
+    paddingVertical: 36,
+    borderRadius: 20,
+    marginBottom: 40,
+    shadowColor: "#000",
+    shadowOpacity: 0.15,
+    shadowRadius: 8,
+    shadowOffset: { width: 0, height: 4 },
+    elevation: 5,
+  },
+  word: {
+    fontSize: 38,
+    fontWeight: "700",
+    textAlign: "center",
+    color: "white",
+    letterSpacing: 1,
+  },
+  choices: { gap: 18, marginBottom: 40 },
+  choice: {
+    backgroundColor: "white",
+    paddingVertical: 18,
+    borderRadius: 16,
+    borderWidth: 1,
+    borderColor: "#e5e7eb",
+    shadowColor: "#000",
+    shadowOpacity: 0.06,
+    shadowRadius: 5,
+    shadowOffset: { width: 0, height: 3 },
+    elevation: 2,
+  },
+  choiceText: {
+    textAlign: "center",
+    fontSize: 18,
+    fontWeight: "600",
+    color: "#111827",
+  },
+  scoreBox: { marginTop: "auto", alignItems: "center", paddingVertical: 16 },
+  scoreText: { fontSize: 20, fontWeight: "700", color: "#111827" },
+});

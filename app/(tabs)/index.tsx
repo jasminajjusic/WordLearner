@@ -30,7 +30,7 @@ export default function StartScreen() {
       title: "Multiple Choice",
       color: "#60a5fa",
       icon: <Entypo name="check" size={32} color="white" />,
-      onPress: () => router.push("/game"),
+      onPress: () => router.push("/multiple_choice"),
     },
     {
       title: "Word Scramble",

@@ -5,6 +5,7 @@ const { CohereClient } = require("cohere-ai");
 
 const cohere = new CohereClient({ token: process.env.CO_API_KEY });
 const app = express();
+
 app.use(cors());
 app.use(express.json());
 

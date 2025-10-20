@@ -25,7 +25,7 @@ export default function ScoreScreen() {
 
       <TouchableOpacity
         style={styles.button}
-        onPress={() => router.replace("/game")}
+        onPress={() => router.replace("/multiple_choice")}
       >
         <Text style={styles.buttonText}>Play Again</Text>
       </TouchableOpacity>
