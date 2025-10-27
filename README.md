@@ -18,7 +18,7 @@ The app makes learning new words engaging and effective.
 
 Here is an example of the app:
 
-![App Screenshot](assets/images/wordlearner.png)
+![App Screenshot](assets/images/word_learner.png)
 
 
 
