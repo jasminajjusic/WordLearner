@@ -9,10 +9,10 @@ The app makes learning new words engaging and effective.
 3. **Match the Pairs** – connect words with their correct translations.  
 4. **Unscramble the Word** – rearrange scrambled letters to form the correct word.  
 
-##  Technologies & Libraries
-- [React Native](https://reactnative.dev/)  
-- [Expo](https://expo.dev/) – for fast development and testing  
-- [Zustand](https://github.com/pmndrs/zustand) – for simple and efficient state management
+## Technologies & Libraries
+- React Native – framework for building mobile applications  
+- Expo – used for fast development and testing  
+- Zustand – simple and efficient state management  
 
 ##  Screenshots
 
